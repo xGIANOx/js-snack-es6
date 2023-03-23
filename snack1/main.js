@@ -11,19 +11,19 @@ const cars = [
     { marca: 'Volkswagen', modello: 'Golf', alimentazione: 'Diesel'}
 ];
 
-const benzina_cars = cars.forEach((car) => {
+const benzina_cars = cars.filter((car) => {
     if (car.alimentazione === 'Benzina') {
         console.log(car)
     }
 })
 
-const diesel_cars = cars.forEach((car) => {
+const diesel_cars = cars.filter((car) => {
     if (car.alimentazione === 'Diesel') {
         console.log(car)
     }
 })
 
-const other_cars = cars.forEach((car) => {
+const other_cars = cars.filter((car) => {
     if (car.alimentazione !== 'Diesel' && car.alimentazione !== 'Benzina') {
         console.log(car)
     }
