@@ -13,19 +13,27 @@ const cars = [
 
 const benzina_cars = cars.filter((car) => {
     if (car.alimentazione === 'Benzina') {
-        console.log(car)
+        return true
     }
 })
+console.log(benzina_cars)
+
 
 const diesel_cars = cars.filter((car) => {
     if (car.alimentazione === 'Diesel') {
-        console.log(car)
+        return true
+        
     }
 })
+console.log(diesel_cars)
 
 const other_cars = cars.filter((car) => {
     if (car.alimentazione !== 'Diesel' && car.alimentazione !== 'Benzina') {
-        console.log(car)
+      return true  
+        
     }
 })
+console.log(other_cars)
+
+
 
